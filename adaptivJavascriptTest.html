@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date and Color Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Date Difference Calculator</h1>
+
+  <form>
+    <label for="date1">Date 1:</label>
+    <input type="datetime-local" id="date1" value="" onchange="calculateDateDifference()">
+    <br>
+    <label for="date2">Date 2:</label>
+    <input type="datetime-local" id="date2" value="" onchange="calculateDateDifference()">
+  </form>
+
+  <div class="result-container">
+    <p id="difference"></p>
+    <p id="dateTrace"></p>
+  </div>
+
+  <h1>Color Picker</h1>
+
+  <form>
+    <label for="textColor">Text Color:</label>
+    <input type="color" id="textColor" value="#000000" onchange="changeColor()">
+    <br>
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor" value="#ffffff" onchange="changeColor()">
+  </form>
+
+  <div class="result-container">
+    <p id="colorChangeTrace"></p>
+  </div>
+</div>
+
+<script src="adaptivJavascriptTest.js"></script>
+</body>
+</html>
