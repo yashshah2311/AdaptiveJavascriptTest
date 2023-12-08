@@ -48,9 +48,11 @@ function changeColor() {
   }
 
   function displayDateChangeHistory() {
-    document.getElementById('dateTrace').textContent = 'Date Change History:\n' + dateChangeHistory.join('\n');
+    const historyContainer = document.getElementById('dateTrace');
+    historyContainer.innerHTML = 'Date Change History:<br>' + dateChangeHistory.join('<br>');
   }
   
   function displayColorChangeHistory() {
-    document.getElementById('colorChangeTrace').textContent = 'Color Change History:\n' + colorChangeHistory.join('\n');
+    const historyContainer = document.getElementById('colorChangeTrace');
+    historyContainer.innerHTML = 'Color Change History:<br>' + colorChangeHistory.join('<br>');
   }
