@@ -46,3 +46,11 @@ function changeColor() {
       alert('Text and background colors cannot be the same.');
     }
   }
+
+  function displayDateChangeHistory() {
+    document.getElementById('dateTrace').textContent = 'Date Change History:\n' + dateChangeHistory.join('\n');
+  }
+  
+  function displayColorChangeHistory() {
+    document.getElementById('colorChangeTrace').textContent = 'Color Change History:\n' + colorChangeHistory.join('\n');
+  }
