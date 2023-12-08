@@ -30,3 +30,19 @@ function displayDifference(difference) {
   document.getElementById('difference').textContent = result;
 }
 
+function changeColor() {
+    const textColor = document.getElementById('textColor').value;
+    const bgColor = document.getElementById('bgColor').value;
+  
+    if (textColor !== bgColor) {
+      document.body.style.color = textColor;
+      document.body.style.backgroundColor = bgColor;
+      lastColorChange = `Last color change: ${new Date().toLocaleString()}`;
+      document.getElementById('colorChangeTrace').textContent = lastColorChange;
+  
+      colorChangeHistory.push(lastColorChange);
+      displayColorChangeHistory();
+    } else {
+      alert('Text and background colors cannot be the same.');
+    }
+  }
