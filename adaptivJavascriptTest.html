@@ -21,7 +21,18 @@
 
   <div class="result-container">
     <p id="difference"></p>
+    <p id="dateTrace"></p>
   </div>
+
+  <h1>Color Picker</h1>
+
+  <form>
+    <label for="textColor">Text Color:</label>
+    <input type="color" id="textColor" value="#000000" onchange="changeColor()">
+    <br>
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor" value="#ffffff" onchange="changeColor()">
+  </form>
 </div>
 
 <script src="adaptivJavascriptTest.js"></script>
